@@ -37,9 +37,22 @@
 					<form action="cat-filter" method="post">
 						<h2 class="catalog-filter-title">Стоимость:</h2>
 						<div class="catalog-filter-price">
-							<input type="range" min="0" max="20000" step="1000" value="15000">
+              <div class="catalog-filter-slider">
+                <div class="catalog-slider-line"></div>
+                <div class="catalog-slider-point slider-min"></div>
+                <div class="catalog-slider-point slider-max"></div>
+              </div>
+              <div class="catalog-filter-price">
+                <div class="catalog-price-min">
+                  <span class="catalog-price-from">от</span>
+                  <input class="price-min" type="text" value="0">
+                </div>
+                <div class="catalog-price-max">
+                  <span class="catalog-price-to">до</span>
+                  <input class="price-max" type="text" value="15 000">
+                </div>
+              </div>
 						</div>
-
             <h2 class="catalog-filter-title">Сетка:</h2>
             <input type="radio" name="adaptive" id="cat-adap" value="adaptive" checked>
             <label class="catalog-filter-select" for="cat-adap">Адаптивная</label>
