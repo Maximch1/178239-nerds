@@ -8,40 +8,42 @@
   </head>
   <body>
   	<header class="main-header">
-			<div class="container">
-				<a href="index.html" class="logo"><img src="img/logo.png" width="139" height="56" alt="NERDS"></a>
-				<nav>
-					<ul class="main-menu">
-						<li>
-							<a href="#">студия</a>
-						</li>
-						<li>
-							<a href="#">клиенты</a>
-						</li>
-						<li>
-							<a href="#">магазин</a>
-						</li>
-						<li>
-							<a href="#">контакты</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="basket">
-					<a class="backet-menu" href="#">корзина</a>
-				</div>
-			</div>
+		  <div class="container">
+		    <div class="logotype">
+			    <a href="index.html" class="logo"><img src="img/logo.png" width="139" height="56" alt="NERDS"></a>
+			  </div>
+			  <div class="navigation">
+		  	  <nav>
+			  	  <ul class="main-menu">
+				  	  <li>
+				  		  <a href="#">Студия</a>
+				  	  </li>
+  					  <li>
+  						  <a href="#">Клиенты</a>
+  					  </li>
+  					  <li>
+  						  <a href="#">Магазин</a>
+  					  </li>
+  					  <li>
+  						  <a href="#">Контакты</a>
+  					  </li>
+  				  </ul>
+  			  </nav>
+  			</div>
+  			<div class="basket">
+  				<a class="backet-menu" href="#">Корзина</a>
+  			</div>
+		  </div>
 			<h1 class="catalog-title">Добро пожаловать в магазин<br>готовых макетов</h1>
 		</header>
 		<main class="container">
 			<div class="catalog">
 				<div class="catalog-filter">
+			    <h2 class="catalog-filter-title">Стоимость:</h2>
 					<form action="cat-filter" method="post">
-						<h2 class="catalog-filter-title">Стоимость:</h2>
 						<div class="catalog-filter-price">
               <div class="catalog-filter-slider">
                 <div class="catalog-slider-line"></div>
-                <div class="catalog-slider-point slider-min"></div>
-                <div class="catalog-slider-point slider-max"></div>
               </div>
               <div class="catalog-filter-price">
                 <div class="catalog-price-min">
@@ -54,88 +56,122 @@
                 </div>
               </div>
 						</div>
-            <h2 class="catalog-filter-title">Сетка:</h2>
-            <input type="radio" name="adaptive" id="cat-adap" value="adaptive" checked>
-            <label class="catalog-filter-select" for="cat-adap">Адаптивная</label>
-            <input type="radio" name="fixed" id="cat-fix" value="fixed">
-            <label class="catalog-filter-select" for="cat-fix">Фиксированная</label>
-            <input type="radio" name="rubber" id="cat-rub" value="rubber" disabled>
-            <label class="catalog-filter-select" for="cat-rub">Резиновая</label>
-            <h2 class="catalog-filter-title">Особенности:</h2>
-            <input type="checkbox" name="slider" id="cat-slid" value="slider" checked>
-            <label class="catalog-filter-select" for="cat-slid">Слайдер</label>
-            <input type="checkbox" name="advantages" id="cat-advan" value="advantages" disabled>
-            <label class="catalog-filter-select" for="cat-advan">Блок преимуществ</label>
-            <input type="checkbox" name="news" id="cat-new" value="news" checked>
-            <label class="catalog-filter-select" for="cat-new">Новости</label>
-            <input type="checkbox" name="gallery" id="cat-gall" value="gallery">
-            <label class="catalog-filter-select" for="cat-gall">Галерея</label>
-            <input type="checkbox" name="basket"  id="cat-bask" value="basket">
-            <label class="catalog-filter-select" for="cat-bask">Корзина</label>
+						<div class="catalog-filter-block">
+              <h2 class="catalog-filter-title">Сетка:</h2>
+              <div class="filter-grid">
+                <input type="radio" name="adaptive" id="cat-adap" value="adaptive" checked>
+                <label class="catalog-filter-select" for="cat-adap">Адаптивная</label>
+              </div>
+              <div class="filter-grid">
+                <input type="radio" name="fixed" id="cat-fix" value="fixed">
+                <label class="catalog-filter-select" for="cat-fix">Фиксированная</label>
+              </div>
+              <div class="filter-grid">
+                <input type="radio" name="rubber" id="cat-rub" value="rubber" disabled>
+                <label class="catalog-filter-select" for="cat-rub">Резиновая</label>
+              </div>
+            </div>
+            <div class="catalog-filter-block">
+              <h2 class="catalog-filter-title">Особенности:</h2>
+              <div class="filter-grid">
+                <input type="checkbox" name="slider" id="cat-slid" value="slider" checked>
+                <label class="catalog-filter-select" for="cat-slid">Слайдер</label>
+              </div>
+              <div class="filter-grid">
+                <input type="checkbox" name="advantages" id="cat-advan" value="advantages" disabled>
+                <label class="catalog-filter-select" for="cat-advan">Блок преимуществ</label>
+              </div>
+              <div class="filter-grid">
+                <input type="checkbox" name="news" id="cat-new" value="news" checked>
+                <label class="catalog-filter-select" for="cat-new">Новости</label>
+              </div>
+              <div class="filter-grid">
+                <input type="checkbox" name="gallery" id="cat-gall" value="gallery">
+                <label class="catalog-filter-select" for="cat-gall">Галерея</label>
+              </div>
+              <div class="filter-grid">
+                <input type="checkbox" name="basket"  id="cat-bask" value="basket">
+                <label class="catalog-filter-select" for="cat-bask">Корзина</label>
+              </div>
+            </div>
             <button type="submit" class="btn">Показать</button>
 					</form>
 				</div>
         <div class="catalog-content">
           <div class="catalog-sort">
+            <h3>Сортировать:</h3>
             <ul class="catalog-sort-menu">
-              <li>Сортировать:</li>
               <li><a class="catalog-sort-type" href="#">По цене</a></li>
               <li><a class="catalog-sort-type" href="#">По типу</a></li>
               <li><a class="catalog-sort-type" href="#">По функционалу</a></li>
             </ul>
-            <a href="#" class="catalog-btn-down btn-checked"></a>
-            <a href="#" class="catalog-btn-up"></a>
+            <div class="catalog-btn">
+              <a href="#" class="catalog-btn-down btn-checked"></a>
+              <a href="#" class="catalog-btn-up"></a>
+            </div>
           </div>
-          <div class="catalog-box">
-            <a href="#" class="catalog-box-link">
-              <img src="img/box-aviator.jpg" width="240" height="240" alt="Aviator">
+          <section class="catalog-box">
+            <article class="products">
+              <div class="catalog-box-product">
+                <img src="img/box-aviator.jpg" width="240" height="240" alt="Aviator">
+              </div>
               <div class="catalog-item-block">
-                <h3 class="catalog-box-title">Aviator</h3>
+                <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">Aviator</a></h2>
                 <p class="catalog-box-info">Одностраничный макет с авторским дизайном</p>
-                <span class="btn red">8000 Р.</span>
+                <a href="#" class="btn btn-red">8000 Р.</a>
               </div>
-            </a>
-            <a href="#" class="catalog-box-link">
-              <img src="img/box-sunset.jpg" width="240" height="240" alt="Sunset">
+            </article>
+            <article class="products">
+              <div class="catalog-box-product">
+                <img src="img/box-sunset.jpg" width="240" height="240" alt="Sunset">
+              </div>
               <div class="catalog-item-block">
-                <h3 class="catalog-box-title">Sunset</h3>
+                <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">Sunset</a></h2>
                 <p class="catalog-box-info">Интернет-магазин с личным кабинетом</p>
-                <span class="btn red">10000 Р.</span>
+                <a href="#" class="btn btn-red">10000 Р.</a>
               </div>
-            </a>
-            <a href="#" class="catalog-box-link">
-              <img src="img/box-forte.jpg" width="240" height="240" alt="FORTE">
+            </article>
+            <article class="products">
+              <div class="catalog-box-product">
+                <img src="img/box-forte.jpg" width="240" height="240" alt="FORTE">
+              </div>
               <div class="catalog-item-block">
-                <h3 class="catalog-box-title">FORTE</h3>
+                <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">FORTE</a></h2>
                 <p class="catalog-box-info">Отличный макет для личного блога</p>
-                <span class="btn red">5000 Р.</span>
+                <a href="#" class="btn btn-red">5000 Р.</a>
               </div>
-            </a>
-            <a href="#" class="catalog-box-link">
-              <img src="img/box-thai.jpg" width="240" height="240" alt="Modern Organic THAI">
+            </article>
+            <article class="products">
+              <div class="catalog-box-product">
+                <img src="img/box-thai.jpg" width="240" height="240" alt="Modern Organic THAI">
+              </div>
               <div class="catalog-item-block">
-                <h3 class="catalog-box-title">Modern Organic THAI</h3>
+                <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">Modern Organic THAI</a></h2>
                 <p class="catalog-box-info">Сайт для ресторана быстрого питания</p>
-                <span class="btn red">12000 Р.</span>
+                <a href="#" class="btn btn-red">12000 Р.</a>
               </div>
-            </a>
-            <a href="#" class="catalog-box-link">
-              <img src="img/box-avenue.jpg" width="240" height="240" alt="AVENUE">
+            </article>
+            <article class="products">
+              <div class="catalog-box-product">
+               <img src="img/box-avenue.jpg" width="240" height="240" alt="AVENUE">
+              </div>
               <div class="catalog-item-block">
-                <h3 class="catalog-box-title">AVENUE</h3>
+                <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">AVENUE</a></h2>
                 <p class="catalog-box-info">Макет для блога о путешествиях</p>
-                <span class="btn red">8000 Р.</span>
+                <a href="#" class="btn btn-red">8000 Р.</a>
               </div>
-            </a>
-            <a href="#" class="catalog-box-link">
-              <img src="img/box-dovetail.jpg" width="240" height="240" alt="DOVETAIL">
+            </article>
+            <article class="products">
+              <div class="catalog-box-product">
+               <img src="img/box-dovetail.jpg" width="240" height="240" alt="DOVETAIL">
+              </div>
               <div class="catalog-item-block">
-                <h3 class="catalog-box-title">DOVETAIL</h3>
+                <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">DOVETAIL</a></h2>
                 <p class="catalog-box-info">Интернет-магазин с галереей товаров</p>
-                <span class="btn red">14000 Р.</span>
+                <a href="#" class="btn btn-red">14000 Р.</a>
               </div>
-            </a>
-          </div>
+            </article>
+          </section>
         </div>
         <div class="catalog-paginator">
           <ul class="catalog-paginator-pages">
@@ -160,16 +196,16 @@
 					<h3 class="map-contact-title">Nerds design studio</h3>
 					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел. +7 (812) 275-75-75</p>
-					<a href="#" class="btn red">Напишите нам</a>
+					<a href="#" class="btn btn-red">Напишите нам</a>
 				</div>
 			</div>
 		</main>
-		<footer>
-      <div class="footer">
+		<footer class="footer-container">
+	    <div class="container">
         <div class="footer-left">
-          <a href="#" class="footer-btn vk"></a>
-          <a href="#" class="footer-btn fb"></a>
-          <a href="#" class="footer-btn inst"></a>
+          <a href="#" class="footer-btn footer-btn-vk"></a>
+          <a href="#" class="footer-btn footer-btn-fb"></a>
+          <a href="#" class="footer-btn footer-btn-inst"></a>
         </div>
         <div class="footer-right">
           <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
@@ -192,7 +228,7 @@
         <label class="feedback-block" for="feedback-text">Текст письма:</label>
         <textarea name="text" id="feedback-text" placeholder="В свободной форме" required rows="5"></textarea>
         <div class="feedback-submit">
-          <button type="submit" class="btn red">Отправить</button>
+          <button type="submit" class="btn btn-red">Отправить</button>
           <a class="btn feedback-cancel" href="#">Омена</a>
         </div>
       </form>
