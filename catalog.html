@@ -39,7 +39,7 @@
 		<main class="catalog">
 			<div class="container">
 				<section class="catalog-filter">
-			    <h2 class="catalog-filter-title">Стоимость:</h2>
+			    <h3 class="catalog-filter-title">Стоимость:</h3>
 					<form action="cat-filter" method="post">
 						<div class="catalog-filter-price">
               <div class="catalog-filter-slider">
@@ -47,17 +47,17 @@
               </div>
               <div class="catalog-filter-price">
                 <div class="catalog-price-min">
-                  <span class="catalog-price-from">от</span>
-                  <input class="price-min" type="text" value="0">
+                  <label class="catalog-price-from" from="price_min">от</label>
+                  <input class="price-min" type="text" id="price_min" value="0">
                 </div>
                 <div class="catalog-price-max">
-                  <span class="catalog-price-to">до</span>
-                  <input class="price-max" type="text" value="15 000">
+                  <label class="catalog-price-to" from="price_max">до</label>
+                  <input class="price-max" type="text" id="price_max" value="15 000">
                 </div>
               </div>
 						</div>
 						<div class="catalog-filter-block">
-              <h2 class="catalog-filter-title">Сетка:</h2>
+              <h3 class="catalog-filter-title">Сетка:</h3>
               <div class="filter-grid">
                 <input type="radio" name="adaptive" id="cat-adap" value="adaptive" checked>
                 <label class="catalog-filter-select" for="cat-adap">Адаптивная</label>
@@ -72,7 +72,7 @@
               </div>
             </div>
             <div class="catalog-filter-block">
-              <h2 class="catalog-filter-title">Особенности:</h2>
+              <h3 class="catalog-filter-title">Особенности:</h3>
               <div class="filter-grid">
                 <input type="checkbox" name="slider" id="cat-slid" value="slider" checked>
                 <label class="catalog-filter-select" for="cat-slid">Слайдер</label>
