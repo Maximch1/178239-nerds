@@ -1,3 +1,11 @@
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 16px;
   line-height: 22px;
@@ -19,4 +27,155 @@ h2{
 h3{
   font-size: 18px;
   line-height: 30px;
+}
+
+div {
+    display: block;
+}
+
+/*распорка*/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*размерка сетки*/
+/* .main-header {
+  margin-bottom: 60px;
+} */
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header-box {
+  padding-top: 25px;
+  margin-bottom: 38px;
+}
+
+.basket {
+  float: right;
+  width: 100px;
+}
+
+.navigation {
+  float: right;
+  width: 400px;
+}
+
+.logotype {
+  float: left;
+  width: 140px;
+  height: ;
+}
+
+.slider-box {
+  width: 305%;
+  transition: transform .8s ease;    
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+.slider {
+  float: left;
+  min-height: 310px;
+  min-width: 910px;
+}
+
+.container-products {
+  padding-top: 80px;
+  padding-bottom: 78px;
+  border-bottom: 2px solid #eee;
+}
+
+.products {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.products:nth-child(3) {
+  margin-right: 0;
+}
+
+.info {
+  padding-top: 60px;
+  padding-bottom: 48px;
+  border-bottom: 2px solid #eee;
+}
+
+.info-main-left {
+  float: left;
+  width: 580px;
+}
+
+.info-main-right {
+  float: right;
+  width: 240px;
+  text-align: center;
+}
+
+
+.clients {
+  padding-top: 40px;
+  padding-bottom: 38px;
+  margin-bottom: 85px;
+  font-size: 0;
+  border-bottom: 2px solid #eee;
+}
+
+.clients a {
+  display: inline-block;
+  height: 100%;
+  margin-right: 90px;
+  vertical-align: middle;
+}
+
+.clients a:first-child {
+  margin-left: 10px;
+}
+
+.map {
+  width: 100%;
+  min-height: 418px;
+  margin: 0 auto;
+  background: url(/img/map.jpg) 50% 50% no-repeat #eee;
+}
+
+.footer-info {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.footer-left {
+  float: left;
+  width: 240px;
+}
+
+.footer-right {
+  float: right;
+  max-width: 550px;
+  margin-right: 20px;
+}
+
+
+
+.main-menu {
+  list-style:none;    
+}
+
+.main-menu li {
+  display: inline-block;    
+}
+
+
+
+input[type=radio] {
+  display: none;
 }
