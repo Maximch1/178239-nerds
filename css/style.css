@@ -46,7 +46,7 @@ div {
 } */
 
 .container {
-  width: 900px;
+  width: 880px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -74,7 +74,7 @@ div {
 
 .slider-box {
   width: 305%;
-  transition: transform .8s ease;    
+  transition: transform .8s ease;
 }
 
 .slider-container {
@@ -145,7 +145,7 @@ div {
   width: 100%;
   min-height: 418px;
   margin: 0 auto;
-  background: url(/img/map.jpg) 50% 50% no-repeat #eee;
+  background: url(../img/map.jpg) 50% 50% no-repeat;
 }
 
 .footer-info {
@@ -167,11 +167,11 @@ div {
 
 
 .main-menu {
-  list-style:none;    
+  list-style:none;
 }
 
 .main-menu li {
-  display: inline-block;    
+  display: inline-block;
 }
 
 
