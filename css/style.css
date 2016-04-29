@@ -73,7 +73,7 @@ div {
 }
 
 .slider-box {
-  width: 305%;
+  width: 315%;
   transition: transform .8s ease;
 }
 
@@ -178,4 +178,32 @@ div {
 
 input[type=radio] {
   display: none;
+}
+
+
+.main-header {
+    background-color: #eee;
+
+
+}
+
+
+.catalog-title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 47px;
+    padding-bottom: 85px;
+    margin-top: 65px;
+    margin-bottom: 55px;
+}
+
+.catalog-filter {
+    float: left;
+    width: 240px;
+}
+
+
+.catalog-content {
+    float: right;
+    width: 560px;
 }
