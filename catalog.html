@@ -3,15 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-	  <link href="http://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" >
   </head>
   <body>
   	<header class="main-header">
-		  <div class="container">
-		    <div class="logotype">
-			    <a href="index.html" class="logo"><img src="img/logo.png" width="139" height="56" alt="NERDS"></a>
+      <div class="main-header-box container clearfix">
+        <div class="logotype">
+          <a href="index.html" class="logo"><img src="img/logo.png" width="139" height="56" alt="NERDS"></a>
 			  </div>
+        <div class="basket">
+          <a class="basket-menu" href="#">Корзина</a>
+        </div>
 			  <div class="navigation">
 		  	  <nav>
 			  	  <ul class="main-menu">
@@ -30,14 +34,11 @@
   				  </ul>
   			  </nav>
   			</div>
-  			<div class="basket">
-  				<a class="backet-menu" href="#">Корзина</a>
-  			</div>
 		  </div>
 			<h1 class="catalog-title">Добро пожаловать в магазин<br>готовых макетов</h1>
 		</header>
 		<main class="catalog">
-			<div class="container">
+			<div class="container clearfix">
 				<section class="catalog-filter">
 			    <h3 class="catalog-filter-title">Стоимость:</h3>
 					<form action="cat-filter" method="post">
@@ -110,8 +111,8 @@
               <a href="#" class="catalog-btn-up"></a>
             </div>
           </div>
-          <div class="catalog-box">
-            <article class="products">
+          <div class="catalog-box clearfix">
+            <article class="catalog-products">
               <div class="catalog-box-product">
                 <img src="img/box-aviator.jpg" width="240" height="240" alt="Aviator">
               </div>
@@ -121,7 +122,7 @@
                 <a href="#" class="btn btn-red">8000 Р.</a>
               </div>
             </article>
-            <article class="products">
+            <article class="catalog-products">
               <div class="catalog-box-product">
                 <img src="img/box-sunset.jpg" width="240" height="240" alt="Sunset">
               </div>
@@ -131,7 +132,7 @@
                 <a href="#" class="btn btn-red">10000 Р.</a>
               </div>
             </article>
-            <article class="products">
+            <article class="catalog-products">
               <div class="catalog-box-product">
                 <img src="img/box-forte.jpg" width="240" height="240" alt="FORTE">
               </div>
@@ -141,7 +142,7 @@
                 <a href="#" class="btn btn-red">5000 Р.</a>
               </div>
             </article>
-            <article class="products">
+            <article class="catalog-products">
               <div class="catalog-box-product">
                 <img src="img/box-thai.jpg" width="240" height="240" alt="Modern Organic THAI">
               </div>
@@ -151,7 +152,7 @@
                 <a href="#" class="btn btn-red">12000 Р.</a>
               </div>
             </article>
-            <article class="products">
+            <article class="catalog-products">
               <div class="catalog-box-product">
                <img src="img/box-avenue.jpg" width="240" height="240" alt="AVENUE">
               </div>
@@ -161,7 +162,7 @@
                 <a href="#" class="btn btn-red">8000 Р.</a>
               </div>
             </article>
-            <article class="products">
+            <article class="catalog-products">
               <div class="catalog-box-product">
                <img src="img/box-dovetail.jpg" width="240" height="240" alt="DOVETAIL">
               </div>
@@ -172,23 +173,23 @@
               </div>
             </article>
           </div>
+          <div class="catalog-paginator">
+            <ul class="catalog-paginator-pages">
+              <li>
+                <span>1</span>
+              </li>
+              <li>
+                <a href="#" class="btn">2</a>
+              </li>
+              <li>
+                <a href="#" class="btn">3</a>
+              </li>
+              <li>
+                <a href="#" class="btn">Следующая</a>
+              </li>
+            </ul>
+          </div>
         </section>
-        <div class="catalog-paginator">
-          <ul class="catalog-paginator-pages">
-            <li>
-              <span>1</span>
-            </li>
-            <li>
-              <a href="#" class="btn">2</a>
-            </li>
-            <li>
-              <a href="#" class="btn">3</a>
-            </li>
-            <li>
-              <a href="#" class="btn">Следующая</a>
-            </li>
-          </ul>
-        </div>
 			</div>
 			<div class="map">
 				<div class="map-script"></div>
@@ -200,10 +201,10 @@
 				</div>
 			</div>
 		</main>
-		<footer class="footer-container">
-	    <div class="container">
-        <div class="footer-left">
-          <a href="#" class="footer-btn footer-btn-vk"></a>
+    <footer class="footer-container">
+	    <div class="footer-info container clearfix">
+			  <div class="footer-left">
+			  	<a href="#" class="footer-btn footer-btn-vk"></a>
           <a href="#" class="footer-btn footer-btn-fb"></a>
           <a href="#" class="footer-btn footer-btn-inst"></a>
         </div>
@@ -212,7 +213,7 @@
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
-		</footer>
+  	</footer>
     <div class="feedback">
       <form method="post">
         <div class="feedback-account">
@@ -229,7 +230,7 @@
         <textarea name="text" id="feedback-text" placeholder="В свободной форме" required rows="5"></textarea>
         <div class="feedback-submit">
           <button type="submit" class="btn btn-red">Отправить</button>
-          <a class="btn feedback-cancel" href="#">Омена</a>
+          <a class="btn btn-cancel" href="#"></a>
         </div>
       </form>
     </div>
