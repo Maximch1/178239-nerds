@@ -53,17 +53,19 @@ div {
 
 .main-header-box {
   padding-top: 25px;
-  margin-bottom: 38px;
+  margin-bottom: 48px;
 }
 
 .basket {
   float: right;
   width: 100px;
+  padding-top: 25px;
 }
 
 .navigation {
   float: right;
-  width: 400px;
+  font-size: 0;
+  padding-top: 25px;
 }
 
 .logotype {
@@ -88,6 +90,16 @@ div {
   min-width: 910px;
 }
 
+.slider-section {
+  width: 380px;
+  float: left;
+}
+
+.slider-section-img {
+  float: right;
+  width: 360px;
+}
+
 .container-products {
   padding-top: 80px;
   padding-bottom: 78px;
@@ -102,6 +114,14 @@ div {
 
 .products:nth-child(3) {
   margin-right: 0;
+}
+
+.products-title{
+  text-transform: uppercase;
+}
+
+.products p {
+  font-size: 15px;
 }
 
 .info {
@@ -141,6 +161,10 @@ div {
   margin-left: 10px;
 }
 
+.clients a:last-child {
+    margin-right: 0;
+}
+
 .map {
   width: 100%;
   min-height: 418px;
@@ -164,6 +188,7 @@ div {
   margin-right: 20px;
 }
 
+/*меню*/
 .main-menu {
   list-style:none;
 }
@@ -172,18 +197,26 @@ div {
   display: inline-block;
 }
 
+.main-menu a, .basket a {
+  font-size: 14px;
+  line-height: 30px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 45px;
+}
+
 
 
 input[type=radio] {
   display: none;
 }
 
-
 .main-header {
   background-color: #eee;
-
-
 }
+
+/*каталог сайтов*/
 
 .catalog-title {
   text-align: center;
@@ -198,7 +231,6 @@ input[type=radio] {
   float: left;
   width: 240px;
 }
-
 
 .catalog-content {
   float: right;
@@ -230,6 +262,35 @@ input[type=radio] {
   display: block;
 }
 
+/*обратная связь*/
 .feedback{
-  display: none; 
+  display: none;
+}
+
+
+/*Кнопки*/
+.btn {
+  display: block;
+  width: 220px;
+  background-color: #fb565a;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-products {
+  width: 120px;
+}
+
+.btn-green{
+  background-color: #00ca74;
+}
+
+.btn-yellow{
+  background-color: #efc84a;
 }
