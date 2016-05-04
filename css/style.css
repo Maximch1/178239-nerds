@@ -98,7 +98,7 @@ div {
 
 .main-header-box {
   padding-top: 25px;
-  margin-bottom: 38px;
+  margin-bottom: 60px;
 }
 
 .basket {
@@ -481,7 +481,6 @@ input[type=radio] {
   font-size: 40px;
   line-height: 47px;
   padding-bottom: 85px;
-  margin-top: 65px;
   margin-bottom: 55px;
   text-transform: uppercase;
 }
@@ -494,6 +493,11 @@ input[type=radio] {
 .catalog-content {
   float: right;
   width: 560px;
+  padding-top: 12px;
+}
+
+.catalog-sort {
+  margin-bottom: 10px;
 }
 
 .catalog-products {
@@ -505,7 +509,7 @@ input[type=radio] {
 }
 
 .catalog-products:nth-child(2n+1) {
-  margin-right: 70px;
+  margin-right: 76px;
 }
 
 .catalog-item-block {
@@ -566,11 +570,22 @@ input[type=radio] {
 .catalog-sort ul,
 .catalog-sort li {
   display: inline-block;
-  margin-right: 40px;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.catalog-sort h3 {
+  margin-right: 36px;
+}
+
+.catalog-sort li {
+  margin-right: 42px;
+}
+
+.catalog-sort-menu {
+  padding: 0;
 }
 
 .catalog-sort a {
