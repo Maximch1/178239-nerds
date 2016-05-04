@@ -10,27 +10,30 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: black;
-  font-weight: 500;
+  font-weight: 400;
   font-family: Roboto, Arial, sans-serif;
 }
 
 h1 {
   font-size: 40px;
   line-height: auto;
+	font-weight: 600;
 }
 
 h2{
   font-size: 36px;
   line-height: 36px;
+	font-weight: 600;
 }
 
 h3{
   font-size: 18px;
   line-height: 30px;
+	font-weight: 600;
 }
 
 div {
-    display: block;
+  display: block;
 }
 
 /*распорка*/
@@ -76,7 +79,6 @@ div {
 
 .slider-box {
   width: 315%;
-  transition: transform .8s ease;
 }
 
 .slider-container {
@@ -102,8 +104,8 @@ div {
 }
 
 .slider-section p {
-    margin-top: -5px;
-    margin-bottom: 30px;
+  margin-top: -5px;
+  margin-bottom: 30px;
 }
 
 .slider:last-child .slider-section-img {
@@ -127,7 +129,9 @@ div {
   cursor: pointer;
 }
 
-#btn-1:checked~.slider-paginator label[for=btn-1], #btn-2:checked~.slider-paginator label[for=btn-2], #btn-3:checked~.slider-paginator label[for=btn-3] {
+#btn-1:checked~.slider-paginator label[for=btn-1],
+#btn-2:checked~.slider-paginator label[for=btn-2],
+#btn-3:checked~.slider-paginator label[for=btn-3] {
   background-color: #c3c3c3;
 }
 
@@ -174,6 +178,7 @@ div {
   font-size: 15px;
 }
 
+/*Информация о фирме*/
 .info {
   padding-top: 60px;
   padding-bottom: 48px;
@@ -191,7 +196,62 @@ div {
   text-align: center;
 }
 
+.info-order {
+  text-align: left;
+}
 
+.info-order p,
+.info-date {
+  text-transform: uppercase;
+}
+
+.info-date {
+  position: relative;
+  margin-bottom: 65px;
+}
+
+.info ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info li {
+  position: relative;
+  margin-bottom: 22px;
+  padding-left: 36px;
+}
+
+.info li::before,
+.info-date::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: #fb565a;
+}
+
+.info-date::after {
+  background-color: #eee;
+  position: absolute;
+  width: 230px;
+}
+
+.info-date span {
+  background: #fff;
+  display: inline-block;
+  width: 110px;
+  position: relative;
+  z-index: 10;
+}
+
+.info-main-right img {
+  margin-bottom: 30px;
+}
+
+/* Логотипы клиентов */
 .clients {
   padding-top: 40px;
   padding-bottom: 38px;
@@ -205,6 +265,11 @@ div {
   height: 100%;
   margin-right: 120px;
   vertical-align: middle;
+	opacity: 0.2;
+}
+
+.clients a:hover {
+	opacity: 1;
 }
 
 .clients a:first-child {
@@ -212,14 +277,15 @@ div {
 }
 
 .clients a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
+/*Карта*/
 .map {
   width: 100%;
   min-height: 418px;
   margin: 0 auto;
-  background: url(../img/map.jpg) 50% 50% no-repeat;
+  background: url(../img/map.jpg) 50% 50% no-repeat #eee;
 }
 
 .map-contact {
@@ -263,17 +329,38 @@ div {
   list-style:none;
 }
 
-.main-menu li {
+.main-menu li,
+.main-menu a{
   display: inline-block;
 }
 
-.main-menu a, .basket a {
+.main-menu a,
+.basket a {
   font-size: 14px;
   line-height: 30px;
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 45px;
+}
+
+.main-menu a.menu-active {
+  border-bottom: 2px solid #fb565a;
+}
+
+.main-menu a.menu-active:active {
+  border-bottom-color: black;
+}
+
+.main-menu a:hover,
+.basket a:hover {
+  color: #fb565a;
+}
+
+.main-menu a:active,
+.basket a:active {
+  color: black;
+  opacity: .4;
 }
 
 input[type=radio] {
@@ -292,6 +379,7 @@ input[type=radio] {
   padding-bottom: 85px;
   margin-top: 65px;
   margin-bottom: 55px;
+  text-transform: uppercase;
 }
 
 .catalog-filter {
@@ -323,11 +411,131 @@ input[type=radio] {
   left: 20px;
   background-color: #fff;
   text-align: center;
+  min-height: 200px;
+  width: 200px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .catalog-products:hover>.catalog-item-block {
   display: block;
 }
+
+.catalog-box-title a {
+  font-size: 18px;
+  line-height: 9px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+.catalog-box-title {
+  line-height: 10px;
+}
+
+.catalog-products::before {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 30px;
+  top: -30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #f1f1f1;
+}
+
+.catalog-products:hover::before {
+  background: #797979;
+}
+
+.catalog-products::after {
+  content: "•••";
+  font-size: 45px;
+  position: absolute;
+  top: -25px;
+  left: 10px;
+  color: #fff;
+}
+
+.catalog-sort h3,
+.catalog-sort ul,
+.catalog-sort li {
+  display: inline-block;
+  margin-right: 40px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.catalog-sort a {
+  text-decoration: none;
+  color: #dadada;
+  border-bottom: 2px dotted #00ca74;
+}
+
+.catalog-sort a:hover {
+	color: black;
+	border-bottom: 2px solid #00ca74;
+}
+
+.catalog-sort a:active {
+	color: black;
+	border: none;
+}
+
+/*переключатель страниц paginator*/
+.catalog-paginator {
+    margin-bottom: 80px;
+}
+
+.catalog-paginator-pages {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-paginator-pages li{
+  display: inline-block;
+}
+
+.catalog-paginator-pages span,
+.catalog-paginator-pages .btn {
+  display: block;
+  padding: 6px 8px;
+  margin-right: 10px;
+  background-color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  width: 20px;
+  color: #000;
+  text-align: center;
+}
+
+.catalog-paginator-pages span {
+  border: 2px solid #f1f1f1;
+}
+
+.catalog-paginator-pages .btn {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.catalog-paginator-pages .btn:hover {
+	background-color: #e5e5e5;
+}
+
+.catalog-paginator-pages .btn:active {
+	background-color: #d5d5d5;
+	border-top: 2px solid #b5b5b5;
+	padding-top: 8px;
+}
+
+.catalog-paginator-pages li:last-of-type a {
+  width: 130px;
+}
+
+
 
 /*обратная связь*/
 .feedback{
@@ -350,6 +558,16 @@ input[type=radio] {
   text-transform: uppercase;
 }
 
+.btn:hover {
+	background-color: #d6494d;
+}
+
+.btn:active {
+	background-color: #b63538;
+	border-top: 2px solid #9b2d30;
+	padding-top: 8px;
+}
+
 .btn-products {
   width: 120px;
 }
@@ -358,11 +576,44 @@ input[type=radio] {
   background-color: #00ca74;
 }
 
+.btn-green:hover{
+	background-color: #01a25e;
+}
+
+.btn-green:active{
+	background-color: #009053;
+	border-top: 2px solid #007b47;
+}
+
 .btn-yellow{
   background-color: #efc84a;
+}
+
+.btn-yellow:hover {
+	background-color: #d6ae2c;
+}
+
+.btn-yellow:active {
+	background-color: #c09b24;
+	border-top: 2px solid #a3841f;
 }
 
 .btn-map-contact {
   width: 184px;
   margin-top: 25px;
+}
+
+.btn-catalog {
+  position: absolute;
+  width: 140px;
+  font-size: 18px;
+  line-height: 9px;
+  padding: 15px 0;
+  text-align: center;
+  left: 30px;
+  bottom: 30px;
+}
+
+.btn-catalog:active {
+	padding-top: 13px;
 }

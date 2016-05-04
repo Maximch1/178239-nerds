@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet" >
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
-  	<header class="main-header">
+    <header class="main-header">
       <div class="main-header-box container clearfix">
         <div class="logotype">
           <a href="index.html" class="logo"><img src="img/logo.png" width="139" height="56" alt="NERDS"></a>
@@ -20,13 +20,13 @@
 		  	  <nav>
 			  	  <ul class="main-menu">
 				  	  <li>
-				  		  <a href="#">Студия</a>
+				  		  <a href="index.html">Студия</a>
 				  	  </li>
   					  <li>
   						  <a href="#">Клиенты</a>
   					  </li>
   					  <li>
-  						  <a href="#">Магазин</a>
+  						  <a href="catalog.html" class="menu-active">Магазин</a>
   					  </li>
   					  <li>
   						  <a href="#">Контакты</a>
@@ -119,7 +119,7 @@
               <div class="catalog-item-block">
                 <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">Aviator</a></h2>
                 <p class="catalog-box-info">Одностраничный макет с авторским дизайном</p>
-                <a href="#" class="btn btn-red">8000 Р.</a>
+                <a href="#" class="btn btn-catalog">8000 Р.</a>
               </div>
             </article>
             <article class="catalog-products">
@@ -129,7 +129,7 @@
               <div class="catalog-item-block">
                 <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">Sunset</a></h2>
                 <p class="catalog-box-info">Интернет-магазин с личным кабинетом</p>
-                <a href="#" class="btn btn-red">10000 Р.</a>
+                <a href="#" class="btn btn-catalog">10000 Р.</a>
               </div>
             </article>
             <article class="catalog-products">
@@ -139,7 +139,7 @@
               <div class="catalog-item-block">
                 <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">FORTE</a></h2>
                 <p class="catalog-box-info">Отличный макет для личного блога</p>
-                <a href="#" class="btn btn-red">5000 Р.</a>
+                <a href="#" class="btn btn-catalog">5000 Р.</a>
               </div>
             </article>
             <article class="catalog-products">
@@ -149,7 +149,7 @@
               <div class="catalog-item-block">
                 <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">Modern Organic THAI</a></h2>
                 <p class="catalog-box-info">Сайт для ресторана быстрого питания</p>
-                <a href="#" class="btn btn-red">12000 Р.</a>
+                <a href="#" class="btn btn-catalog">12000 Р.</a>
               </div>
             </article>
             <article class="catalog-products">
@@ -159,7 +159,7 @@
               <div class="catalog-item-block">
                 <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">AVENUE</a></h2>
                 <p class="catalog-box-info">Макет для блога о путешествиях</p>
-                <a href="#" class="btn btn-red">8000 Р.</a>
+                <a href="#" class="btn btn-catalog">8000 Р.</a>
               </div>
             </article>
             <article class="catalog-products">
@@ -169,7 +169,7 @@
               <div class="catalog-item-block">
                 <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">DOVETAIL</a></h2>
                 <p class="catalog-box-info">Интернет-магазин с галереей товаров</p>
-                <a href="#" class="btn btn-red">14000 Р.</a>
+                <a href="#" class="btn btn-catalog">14000 Р.</a>
               </div>
             </article>
           </div>
@@ -191,15 +191,15 @@
           </div>
         </section>
 			</div>
-			<div class="map">
-				<div class="map-script"></div>
-				<div class="map-contact">
-					<h3 class="map-contact-title">Nerds design studio</h3>
-					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-					<p>тел. +7 (812) 275-75-75</p>
-					<a href="#" class="btn btn-red">Напишите нам</a>
-				</div>
-			</div>
+      <div class="map">
+        <div class="map-script"></div>
+        <div class="map-contact container">
+				  <h3 class="map-contact-title">NЁRDS DESIGN STUDIO</h3>
+          <p class="map-contact-address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p class="map-contact-tel">тел. +7 (812) 275-75-75</p>
+          <a href="#" class="btn btn-map-contact">Напишите нам</a>
+        </div>
+      </div>
 		</main>
     <footer class="footer-container">
 	    <div class="footer-info container clearfix">
@@ -229,7 +229,7 @@
         <label class="feedback-block" for="feedback-text">Текст письма:</label>
         <textarea name="text" id="feedback-text" placeholder="В свободной форме" required rows="5"></textarea>
         <div class="feedback-submit">
-          <button type="submit" class="btn btn-red">Отправить</button>
+          <button type="submit" class="btn">Отправить</button>
           <a class="btn btn-cancel" href="#"></a>
         </div>
       </form>
