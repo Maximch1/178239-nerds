@@ -44,9 +44,11 @@
 					<form action="cat-filter" method="post">
 						<div class="catalog-filter-price">
               <div class="catalog-filter-slider">
-                <div class="catalog-slider-line"></div>
+                <div class="catalog-filter-scale">
+                  <div class="catalog-slider-line"></div>
+                </div>
               </div>
-              <div class="catalog-filter-price">
+              <div class="catalog-price-controls">
                 <div class="catalog-price-min">
                   <label class="catalog-price-from" from="price_min">от</label>
                   <input class="price-min" type="text" id="price_min" value="0">
@@ -60,42 +62,42 @@
 						<div class="catalog-filter-block">
               <h3 class="catalog-filter-title">Сетка:</h3>
               <div class="filter-grid">
-                <input type="radio" name="adaptive" id="cat-adap" value="adaptive" checked>
+                <input type="radio" name="grid" id="cat-adap" value="adaptive" checked>
                 <label class="catalog-filter-select" for="cat-adap">Адаптивная</label>
               </div>
               <div class="filter-grid">
-                <input type="radio" name="fixed" id="cat-fix" value="fixed">
+                <input type="radio" name="grid" id="cat-fix" value="fixed">
                 <label class="catalog-filter-select" for="cat-fix">Фиксированная</label>
               </div>
               <div class="filter-grid">
-                <input type="radio" name="rubber" id="cat-rub" value="rubber" disabled>
+                <input type="radio" name="grid" id="cat-rub" value="rubber" disabled>
                 <label class="catalog-filter-select" for="cat-rub">Резиновая</label>
               </div>
             </div>
             <div class="catalog-filter-block">
               <h3 class="catalog-filter-title">Особенности:</h3>
-              <div class="filter-grid">
+              <div class="filter-check">
                 <input type="checkbox" name="slider" id="cat-slid" value="slider" checked>
                 <label class="catalog-filter-select" for="cat-slid">Слайдер</label>
               </div>
-              <div class="filter-grid">
+              <div class="filter-check">
                 <input type="checkbox" name="advantages" id="cat-advan" value="advantages" disabled>
                 <label class="catalog-filter-select" for="cat-advan">Блок преимуществ</label>
               </div>
-              <div class="filter-grid">
+              <div class="filter-check">
                 <input type="checkbox" name="news" id="cat-new" value="news" checked>
                 <label class="catalog-filter-select" for="cat-new">Новости</label>
               </div>
-              <div class="filter-grid">
+              <div class="filter-check">
                 <input type="checkbox" name="gallery" id="cat-gall" value="gallery">
                 <label class="catalog-filter-select" for="cat-gall">Галерея</label>
               </div>
-              <div class="filter-grid">
+              <div class="filter-check">
                 <input type="checkbox" name="basket"  id="cat-bask" value="basket">
                 <label class="catalog-filter-select" for="cat-bask">Корзина</label>
               </div>
             </div>
-            <button type="submit" class="btn">Показать</button>
+            <button type="submit" class="btn btn-filter">Показать</button>
 					</form>
 				</section>
         <section class="catalog-content">
@@ -128,7 +130,7 @@
               </div>
               <div class="catalog-item-block">
                 <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">Sunset</a></h2>
-                <p class="catalog-box-info">Интернет-магазин с личным кабинетом</p>
+                <p class="catalog-box-info">Интернет-магазин<br>с личным кабинетом</p>
                 <a href="#" class="btn btn-catalog">10000 Р.</a>
               </div>
             </article>
@@ -138,7 +140,7 @@
               </div>
               <div class="catalog-item-block">
                 <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">FORTE</a></h2>
-                <p class="catalog-box-info">Отличный макет для личного блога</p>
+                <p class="catalog-box-info">Отличный макет<br>для личного блога</p>
                 <a href="#" class="btn btn-catalog">5000 Р.</a>
               </div>
             </article>
@@ -158,7 +160,7 @@
               </div>
               <div class="catalog-item-block">
                 <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">AVENUE</a></h2>
-                <p class="catalog-box-info">Макет для блога о путешествиях</p>
+                <p class="catalog-box-info">Макет для блога<br>о путешествиях</p>
                 <a href="#" class="btn btn-catalog">8000 Р.</a>
               </div>
             </article>
@@ -168,7 +170,7 @@
               </div>
               <div class="catalog-item-block">
                 <h2 class="catalog-box-title"><a href="#" class="catalog-box-link">DOVETAIL</a></h2>
-                <p class="catalog-box-info">Интернет-магазин с галереей товаров</p>
+                <p class="catalog-box-info">Интернет-магазин<br>с галереей товаров</p>
                 <a href="#" class="btn btn-catalog">14000 Р.</a>
               </div>
             </article>
