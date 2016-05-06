@@ -985,7 +985,7 @@ input[type=checkbox] {
   cursor: default;
 }
 
-.catalog-filter-select:before {
+.catalog-filter-select::before {
   vertical-align: top;
   font-size: 28px;
   line-height: 20px;
@@ -1043,7 +1043,9 @@ input[type=checkbox] {
   width: 220px;
 }
 
-.feedback-left input, .feedback-right input, .feedback-text textarea {
+.feedback-left input,
+.feedback-right input,
+.feedback-text textarea {
   width: 186px;
   border: 2px solid #d7dcde;
   border-radius: 5px;
@@ -1052,6 +1054,12 @@ input[type=checkbox] {
   line-height: 18px;
   color: #000;
   padding: 8px 15px;
+}
+
+.feedback-left input:hover,
+.feedback-right input:hover,
+.feedback-text textarea:hover {
+  border-color: #a2a9ac;
 }
 
 .feedback-account {
@@ -1070,5 +1078,9 @@ input[type=checkbox] {
 }
 
 .feedback-text {
-    margin-bottom: 43px;
+  margin-bottom: 43px;
+}
+
+.feedback-show {
+  display: block;
 }

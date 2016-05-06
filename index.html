@@ -163,16 +163,16 @@
         <div class="feedback-account clearfix">
           <div class="feedback-left">
             <label class="feedback-block" for="feedback-log">Ваше имя:</label>
-            <input type="text" name="login" id="feedback-log" placeholder="Представьтесь, пожалуйста" required>
+            <input type="text" name="user-name" id="feedback-nam" placeholder="Представьтесь, пожалуйста">
           </div>
           <div class="feedback-right">
             <label class="feedback-block" for="feedback-email">Ваш e-mail:</label>
-            <input type="email" name="email" id="feedback-email" placeholder="Для отправки ответа" required>
+            <input type="email" name="user-email" id="feedback-email" placeholder="Для отправки ответа">
           </div>
         </div>
         <div class="feedback-text">
           <label class="feedback-block" for="feedback-text">Текст письма:</label>
-          <textarea name="text" id="feedback-text" placeholder="В свободной форме" required rows="5"></textarea>
+          <textarea name="text" id="feedback-text" placeholder="В свободной форме" rows="5"></textarea>
         </div>
           <div class="feedback-submit">
             <button type="submit" class="btn feedback-submit-btn">Отправить</button>
@@ -180,5 +180,47 @@
         </div>
       </form>
     </div>
+    <script>
+      var login = document.querySelector(".btn-map-contact");
+      var feedb = document.querySelector(".feedback");
+      var close = feedb.querySelector(".feedback-cancel");
+      var username = feedb.querySelector("[name=user-name]");
+      var useremail = feedb.querySelector("[name=user-email]")
+      var form = feedb.querySelector("form");
+      var storage = localStorage.getItem("login");
+
+      login.addEventListener("click", function(event){
+        event.preventDefault();
+        feedb.classList.add("feedback-show");
+        if (storage) {
+          login.value = storage;
+        } else {
+          username.focus();
+        }
+      });
+
+      close.addEventListener("click", function(event){
+        event.preventDefault();
+        feedb.classList.remove("feedback-show");
+      });
+
+      form.addEventListener("submit", function(event){
+        if (!username.value || !useremail.value) {
+          event.preventDefault();
+          console.log("нужно ввести логин и пароль");
+        } else {
+          localStorage.setItem("login", login.value);
+        }
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (feedb.classList.contains("feedback-show")) {
+            feedb.classList.remove("feedback-show");
+          }
+        }
+      })
+
+    </script>
   </body>
 </html>
