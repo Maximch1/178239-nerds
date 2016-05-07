@@ -346,16 +346,17 @@ img {
 
 /*Карта*/
 .map {
+  position: relative;
   width: 100%;
   min-height: 418px;
   margin: 0 auto;
   background: url(../img/map.jpg) 50% 50% no-repeat #eee;
+  background-size: cover;
 }
 
 .map-contact {
-  position: relative;
-  right: 315px;
-  top: 88px;
+  position: absolute;;
+  bottom: 90px;
   width: 230px;
   min-height: 230px;
   background-color: #fff;
@@ -791,7 +792,7 @@ input[type=checkbox] {
 .btn-filter {
   color: #000;
   background: #f1f1f1;
-  padding: 10px 46px;
+  padding: 10px 48px;
   margin-top: 14px;
 }
 
@@ -986,6 +987,8 @@ input[type=checkbox] {
 }
 
 .catalog-filter-select::before {
+  position: absolute;
+  left: 0px;
   vertical-align: top;
   font-size: 28px;
   line-height: 20px;
@@ -998,6 +1001,7 @@ input[type=checkbox] {
   cursor: pointer;
   position: relative;
   line-height: 20px;
+  padding-left: 36px;
 }
 
 
