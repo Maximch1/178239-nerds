@@ -58,20 +58,20 @@ body {
 h1 {
   font-size: 40px;
   line-height: auto;
-	font-weight: 600;
+  font-weight: 600;
 }
 
-h2{
+h2 {
   font-size: 36px;
   line-height: 36px;
-	font-weight: 600;
+  font-weight: 600;
   margin-bottom: 18px;
 }
 
-h3{
+h3 {
   font-size: 18px;
   line-height: 30px;
-	font-weight: 600;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -92,10 +92,6 @@ img {
 }
 
 /*размерка сетки*/
-/* .main-header {
-  margin-bottom: 60px;
-} */
-
 .container {
   width: 880px;
   margin: 0 auto;
@@ -225,7 +221,7 @@ img {
   margin-right: 0;
 }
 
-.products-title{
+.products-title {
   text-transform: uppercase;
   margin-bottom: 13px;
 }
@@ -333,7 +329,7 @@ img {
 }
 
 .clients a:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 .clients a:first-child {
@@ -423,13 +419,13 @@ img {
 }
 
 .footer-btn:hover {
-	background-color: #fb565a;
+  background-color: #fb565a;
 }
 
 .footer-btn:active {
-	background-color: #d6494d;
-	border-top: 2px solid #b63e42;
-	line-height: 57px;
+  background-color: #d6494d;
+  border-top: 2px solid #b63e42;
+  line-height: 57px;
   height: 58px;
 }
 
@@ -614,13 +610,13 @@ input[type=checkbox] {
 }
 
 .catalog-sort a:hover {
-	color: black;
-	border-bottom: 2px solid #00ca74;
+  color: black;
+  border-bottom: 2px solid #00ca74;
 }
 
 .catalog-sort a:active {
-	color: black;
-	border: none;
+  color: black;
+  border: none;
 }
 
 .catalog-btn {
@@ -634,12 +630,12 @@ input[type=checkbox] {
 }
 
 .catalog-btn a:hover {
-	border: none;
-	color: #b5b5b5;
+  border: none;
+  color: #b5b5b5;
 }
 
 .catalog-btn a:active {
-	color: #000;
+  color: #000;
 }
 
 .catalog-btn-down::before,
@@ -664,7 +660,7 @@ input[type=checkbox] {
   padding: 0;
 }
 
-.catalog-paginator-pages li{
+.catalog-paginator-pages li {
   display: inline-block;
   vertical-align: top;
 }
@@ -693,13 +689,13 @@ input[type=checkbox] {
 }
 
 .catalog-paginator-pages .btn:hover {
-	background-color: #e5e5e5;
+  background-color: #e5e5e5;
 }
 
 .catalog-paginator-pages .btn:active {
-	background-color: #d5d5d5;
-	border-top: 2px solid #b5b5b5;
-	padding-top: 8px;
+  background-color: #d5d5d5;
+  border-top: 2px solid #b5b5b5;
+  padding-top: 8px;
 }
 
 .catalog-paginator-pages li:last-of-type a {
@@ -728,13 +724,13 @@ input[type=checkbox] {
 }
 
 .btn:hover {
-	background-color: #d6494d;
+  background-color: #d6494d;
 }
 
 .btn:active {
-	background-color: #b63538;
-	border-top: 2px solid #9b2d30;
-	padding-top: 8px;
+  background-color: #b63538;
+  border-top: 2px solid #9b2d30;
+  padding-top: 8px;
 }
 
 .btn-products {
@@ -742,30 +738,30 @@ input[type=checkbox] {
   padding-right: 40px;
 }
 
-.btn-green{
+.btn-green {
   background-color: #00ca74;
 }
 
-.btn-green:hover{
-	background-color: #01a25e;
+.btn-green:hover {
+  background-color: #01a25e;
 }
 
-.btn-green:active{
-	background-color: #009053;
-	border-top: 2px solid #007b47;
+.btn-green:active {
+  background-color: #009053;
+  border-top: 2px solid #007b47;
 }
 
-.btn-yellow{
+.btn-yellow {
   background-color: #efc84a;
 }
 
 .btn-yellow:hover {
-	background-color: #d6ae2c;
+  background-color: #d6ae2c;
 }
 
 .btn-yellow:active {
-	background-color: #c09b24;
-	border-top: 2px solid #a3841f;
+  background-color: #c09b24;
+  border-top: 2px solid #a3841f;
 }
 
 .btn-map-contact {
@@ -786,7 +782,7 @@ input[type=checkbox] {
 }
 
 .btn-catalog:active {
-	padding-top: 13px;
+  padding-top: 13px;
 }
 
 .btn-filter {
@@ -801,13 +797,13 @@ input[type=checkbox] {
 }
 
 .btn-filter:active {
-	background-color: #d5d5d5;
-	border-top: 2px solid #b5b5b5;
-	padding-top: 8px;
+  background-color: #d5d5d5;
+  border-top: 2px solid #b5b5b5;
+  padding-top: 8px;
 }
 
 .feedback-submit-btn {
-    width: 100%;
+  width: 100%;
 }
 
 
@@ -981,7 +977,7 @@ input[type=checkbox] {
 .filter-grid input:disabled + .catalog-filter-select,
 .filter-grid input:disabled + .catalog-filter-select::before,
 .filter-check input:disabled + .catalog-filter-select,
-.filter-check input:disabled + .catalog-filter-select::before  {
+.filter-check input:disabled + .catalog-filter-select::before {
   color: #e9e9e9;
   cursor: default;
 }
